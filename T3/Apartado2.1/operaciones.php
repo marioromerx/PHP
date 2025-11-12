@@ -14,5 +14,6 @@ $n2 = $_POST['n2'];
   <p><?php echo "$n1 * $n2 = " . ($n1 * $n2); ?></p>
   <p><?php echo "$n1 / $n2 = " . ($n1 / $n2); ?></p>
   <p><?php echo "$n1 % $n2 = " . ($n1 % $n2); ?></p>
+  <p><?php echo "<p>Bienvenido/a, ", $_POST["nombre"], " con rol ", $_POST["roles"];?></p>
 </body>
 </html>
