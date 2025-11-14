@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Resultados</title>
-</head>
-<body>
-  <p><?php echo "<p>Bienvenido/a, ", $_POST["nombre"], " con rol ", $_POST["roles"];?></p>
-</body>
-</html>
+<?php 
+$nombre = $_POST["nombre"];
+$roles = $_POST['roles'];
+echo "<p>Bienvenido/a, ", $nombre, " con rol ";
+
+foreach ($roles as $trabajo) {
+ echo $trabajo;
+}
+
+
+?>
+
